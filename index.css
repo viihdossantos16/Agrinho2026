@@ -1,0 +1,183 @@
+/* Configurações Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f7f9f6;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.secao {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.secao h2 {
+    color: #2e6f40;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+/* Header */
+header {
+    background-color: #1b4324;
+    color: white;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo span {
+    color: #8bc34a;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #8bc34a;
+}
+
+/* Hero Banner */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&q=80&w=1200') no-repeat center center/cover;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero-content h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.btn-principal {
+    background-color: #8bc34a;
+    color: #1b4324;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.btn-principal:hover {
+    background-color: #a2d85b;
+    transform: scale(1.05);
+}
+
+/* Área de Interação */
+.bg-alternativo {
+    background-color: #eef5ed;
+}
+
+.botoes-acao {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.btn-acao {
+    background-color: white;
+    border: 2px solid #2e6f40;
+    color: #2e6f40;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-acao:hover {
+    background-color: #2e6f40;
+    color: white;
+}
+
+/* Placar de Impacto */
+.placar-impacto {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card-impacto {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    border-top: 5px solid #8bc34a;
+}
+
+.card-impacto span {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #1b4324;
+    display: block;
+}
+
+/* Rodapé */
+footer {
+    background-color: #1b4324;
+    color: #a2d85b;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9rem;
+}
+
+/* Responsividade Básica */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+    }
+    nav ul {
+        margin-top: 15px;
+    }
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+}

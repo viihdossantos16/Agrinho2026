@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrinho 2026 - Conectando Campo e Cidade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1 class="logo">Agrinho <span>2026</span></h1>
+            <nav>
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#Inovacao">Inovação</a></li>
+                    <li><a href="#interacao">Participe</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Sustentabilidade e Tecnologia no Campo</h2>
+            <p>Cultivando o futuro através da educação e da inovação no agronegócio.</p>
+            <a href="#interacao" class="btn-principal">Simular Ação Verde</a>
+        </div>
+    </section>
+
+    <section id="sobre" class="container secao">
+        <h2>O Programa Agrinho</h2>
+        <p>O Agrinho 2026 traz como foco a relação entre a tecnologia de ponta e a preservação ambiental. É a união do conhecimento escolar com a prática no campo para garantir a segurança alimentar do amanhã.</p>
+    </section>
+
+    <section id="interacao" class="bg-alternativo">
+        <div class="container secao">
+            <h2>Painel de Impacto Ambiental</h2>
+            <p>Clique nos botões abaixo para adotar práticas sustentáveis na nossa fazenda virtual e veja o impacto acontecer!</p>
+            
+            <div class="botoes-acao">
+                <button class="btn-acao" onclick="adicionarImpacto('arvores')">🌱 Plantar Árvore</button>
+                <button class="btn-acao" onclick="adicionarImpacto('agua')">💧 Economizar Água</button>
+                <button class="btn-acao" onclick="adicionarImpacto('energia')">☀️ Painel Solar</button>
+            </div>
+
+            <div class="placar-impacto">
+                <div class="card-impacto">
+                    <span id="qtd-arvores">0</span>
+                    <p>Árvores Plantadas</p>
+                </div>
+                <div class="card-impacto">
+                    <span id="qtd-agua">0</span>L
+                    <p>De Água Poupados</p>
+                </div>
+                <div class="card-impacto">
+                    <span id="qtd-energia">0</span> kWh
+                    <p>Energia Limpa Gerada</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Projeto Agrinho - Desenvolvido com foco no Futuro Sustentável.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
